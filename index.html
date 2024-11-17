@@ -1,11 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/46cb36088b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <title>Clima App</title>
 </head>
 <body>
+
+    <div class="card">
+        <form class="search">
+            <input type="search" 
+                   name="city-name"
+                   id="city-name"
+                   placeholder="Nome da cidade" 
+                   >
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button> 
+        </form>  
+
+        <div class="weather">
+            <h1 class="title">Lisboa, PT</h1>
+
+           <div id="temp">
+            <img id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png">
+            <h2 class="temp">12 <sup>°C</sup></h2>
+        </div>
+
+            <div class="infos">
+                <div class="col">
+                    <i id="temp-max-icon" class="fa-solid fa-temperature-high"></i>
+                    <div>
+                        <p>Temp. max</p>
+                        <p class="temp-max">16 <sup>°C</sup></p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <i id="temp-min-icon" class="fa-solid fa-temperature-low"></i>
+                    <div>
+                        <p>Temp. min</p>
+                        <p class="temp-min">9 <sup>°C</sup></p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <i id="humidity-icon" class="fa-solid fa-droplet"></i>
+                    <div>
+                        <p>Humidade</p>
+                        <p  class="humidity">64%</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <i id="wind-icon" class="fa-solid fa-wind"></i>
+                    <div>
+                        <p>Vento</p>
+                        <p class="wind">17 km/h</p>
+                    </div>
+                </div>
+
+            </div>
+        
+        </div>
+
+        <div id="alert"></div>
     
+    </div>
+
+    <script src="src/javascript/script.js"></script>
+
 </body>
 </html>
